@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="avatarEditorTest">
+    <head>
+        <title>avatar-editor test</title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="../bower_components/ngImgCrop/compile/minified/ng-img-crop.css"/>
+        <link rel="stylesheet" href="../dist/avatar-editor.min.css"/>
+    </head>
+    <body>
+        
+        <div ng-view class="container">
+            <div data-avatar-editor data-src="images/shrek.jpg"></div>
+        </div>
+        
+        <script src="../bower_components/angularjs/angular.js"></script>
+        <script src="../bower_components/ngImgCrop/compile/unminified/ng-img-crop.js"></script>
+        <script src="../dist/avatar-editor.min.js"></script>
+        <script>
+            var app = angular.module('avatarEditorTest', ['avatarEditor']);
+        </script>
+        
+    </body>
+</html>

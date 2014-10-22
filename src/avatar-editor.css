@@ -1,0 +1,90 @@
+.avatar-editor {
+    position: relative;
+    background: #E4E4E4;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+}
+
+.avatar-editor label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.avatar-editor label img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.avatar-editor input[type="file"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.avatar-editor .ng-img-crop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.avatar-editor .avatar-editor-buttons {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    cursor: default;
+}
+
+.avatar-editor .avatar-editor-buttons a {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.avatar-editor .avatar-editor-button-done {
+    background-color: #87b87f;
+}
+.avatar-editor .avatar-editor-button-done:hover {
+    background-color: #629b58;
+}
+
+.avatar-editor .avatar-editor-button-close {
+    background-color: #d15b47;
+}
+.avatar-editor .avatar-editor-button-close:hover {
+    background-color: #b74635;
+}
+
+.glyphicon-ok,
+.glyphicon-remove {
+    background-image: url('./images/vi-image-crop-icons.png');
+    background-repeat: no-repeat;
+}
+
+.glyphicon-ok {
+    background-position: -1px -23px;
+}
+
+.glyphicon-remove {
+    background-position: 0px -45px;
+}

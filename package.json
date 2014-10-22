@@ -1,0 +1,28 @@
+{
+  "name": "avatar-editor",
+  "version": "1.0.0",
+  "description": "AngularJS directive for resizing avatar",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hlynx/avatar-editor.git"
+  },
+  "author": "hlynx <hlynx@users.noreply.github.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hlynx/avatar-editor/issues"
+  },
+  "homepage": "https://github.com/hlynx/avatar-editor",
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "matchdep": "^0.3.0"
+  }
+}

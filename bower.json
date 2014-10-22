@@ -1,0 +1,33 @@
+{
+    "name": "avatar-editor",
+    "version": "1.0.0",
+    "keywords": [
+        "angular",
+        "avatar editor",
+        "avatar crop"
+    ],
+    "authors": [
+        "hlynx <hlynx@users.noreply.github.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hlynx/avatar-editor.git"
+    },
+    "description": "AngularJS directive for resizing avatar",
+    "main": [
+        "./dist/avatar-editor.js",
+        "./dist/avatar-editor.css"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        "nbproject"
+    ],
+    "dependencies": {
+        "angularjs": "~1.3",
+        "ngImgCrop": "~0.2"
+    }
+}
