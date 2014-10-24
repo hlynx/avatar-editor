@@ -1,4 +1,4 @@
-AngularJS directive for resizing avatar
+AngularJS directive for croping avatar from image
 
 ## Usage
 
@@ -7,7 +7,7 @@ AngularJS directive for resizing avatar
   In your web page:
 
   ```html
-    <link rel="stylesheet" href=".bower_components/ngImgCrop/compile/minified/ng-img-crop.css"/>
+    <link rel="stylesheet" href="bower_components/ngImgCrop/compile/minified/ng-img-crop.css"/>
     <link rel="stylesheet" href="bower_components/dist/avatar-editor.min.css"/>
     <script src="bower_components/angularjs/angular.js"></script>
     <script src="bower_components/ngImgCrop/compile/unminified/ng-img-crop.js"></script>

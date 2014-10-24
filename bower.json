@@ -1,6 +1,6 @@
 {
     "name": "avatar-editor",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "keywords": [
         "angular",
         "avatar editor",
@@ -13,7 +13,7 @@
         "type": "git",
         "url": "https://github.com/hlynx/avatar-editor.git"
     },
-    "description": "AngularJS directive for resizing avatar",
+    "description": "AngularJS directive for croping avatar from image",
     "main": [
         "./dist/avatar-editor.js",
         "./dist/avatar-editor.css"
