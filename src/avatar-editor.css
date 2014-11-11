@@ -6,18 +6,21 @@
     text-align: center;
 }
 
-.avatar-editor label {
+.avatar-editor .img-outer {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    cursor: pointer;
     z-index: 11;
 }
 
-.avatar-editor label img {
+.avatar-editor label.img-outer {
+    cursor: pointer;
+}
+
+.avatar-editor .img-outer img {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -34,7 +37,8 @@
     height: 0;
 }
 
-.avatar-editor .ng-img-crop {
+.avatar-editor .ng-img-crop,
+.avatar-editor video {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,6 +77,13 @@
 }
 .avatar-editor .avatar-editor-button-close:hover {
     background-color: #b74635;
+}
+
+.avatar-editor .avatar-editor-button-camera {
+    background-color: #5bc0de;
+}
+.avatar-editor .avatar-editor-button-camera:hover {
+    background-color: #31b0d5;
 }
 
 .glyphicon-ok,

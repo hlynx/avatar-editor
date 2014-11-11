@@ -5,16 +5,18 @@
         <meta charset='utf-8'>
         <link rel="stylesheet" href="../bower_components/ngImgCrop/compile/minified/ng-img-crop.css"/>
         <link rel="stylesheet" href="../dist/avatar-editor.min.css"/>
+        <!--<link rel="stylesheet" href="../src/avatar-editor.css"/>-->
     </head>
     <body>
         
         <div ng-view class="container">
-            <div data-avatar-editor data-src="images/shrek.jpg"></div>
+            <div data-avatar-editor data-src="images/shrek.jpg" data-mode-upload="1" data-mode-edit="1"></div>
         </div>
         
         <script src="../bower_components/angularjs/angular.js"></script>
         <script src="../bower_components/ngImgCrop/compile/unminified/ng-img-crop.js"></script>
         <script src="../dist/avatar-editor.min.js"></script>
+        <!--<script src="../src/avatar-editor.js"></script>-->
         <script>
             var app = angular.module('avatarEditorTest', ['avatarEditor']);
         </script>

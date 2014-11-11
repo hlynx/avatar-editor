@@ -21,5 +21,6 @@ AngularJS directive for croping avatar from image
 
 3. Add avatar-editor directive to the wanted element, example:
   ```html
-  <div data-avatar-editor> .... </div>
+  <div data-avatar-editor data-mode-upload="1" data-mode-edit="1"> .... </div>
   ```
+    data-mode-camera="1" - to enable capture from webcamera
