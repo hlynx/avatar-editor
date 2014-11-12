@@ -60,9 +60,12 @@
 .avatar-editor .avatar-editor-buttons a {
     width: 20px;
     height: 20px;
+    line-height: 20px;
     display: inline-block;
     margin-right: 2px;
     cursor: pointer;
+    color: #fff;
+    text-decoration: none;
 }
 
 .avatar-editor .avatar-editor-button-done {

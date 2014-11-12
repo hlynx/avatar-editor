@@ -24,3 +24,4 @@ AngularJS directive for croping avatar from image
   <div data-avatar-editor data-mode-upload="1" data-mode-edit="1"> .... </div>
   ```
     data-mode-camera="1" - to enable capture from webcamera
+    data-result-size="400" - result image size (default 200)

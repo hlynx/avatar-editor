@@ -6,11 +6,12 @@ angular.module('avatarEditor', ['ngImgCrop']).directive('avatarEditor', ['$log',
             src: '@',
             modeUpload: '@',
             modeEdit: '@',
-            modeCamera: '@'
+            modeCamera: '@',
+            resultSize: '@'
         },
         template:
         '<div class="avatar-editor">\
-            <img-crop class="ng-img-crop" ng-show="stage == 2 && modeEdit" data-image="resultSrc" data-result-image="croppedSrc" data-area-type="square" data-area-min-size="100"></img-crop>\
+            <img-crop class="ng-img-crop" ng-show="stage == 2 && modeEdit" data-image="resultSrc" data-result-image="croppedSrc" data-area-type="square" data-area-min-size="100" data-result-image-size="resultSize"></img-crop>\
             <label ng-show="stage == 1 && modeUpload" class="img-outer">\
                 <img ng-src="{{src}}">\
                 <input type="file">\
@@ -33,6 +34,9 @@ angular.module('avatarEditor', ['ngImgCrop']).directive('avatarEditor', ['$log',
         link: function(scope, element, attrs) {
             scope.resultSrc = scope.src || '';
             scope.croppedSrc = '';
+            scope.resultSize = scope.resultSize || 200;
+            
+            console.log(scope.resultSize);
 
             // First stage - show image
             scope.setStage1 = function() {
