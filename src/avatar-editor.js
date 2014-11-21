@@ -3,7 +3,7 @@ angular.module('avatarEditor', ['ngImgCrop']).directive('avatarEditor', ['$log',
         restrict: 'EA',
         replace: true,
         scope: {
-            src: '@',
+            src: '=',
             modeUpload: '@',
             modeEdit: '@',
             modeCamera: '@',
@@ -36,11 +36,10 @@ angular.module('avatarEditor', ['ngImgCrop']).directive('avatarEditor', ['$log',
             scope.croppedSrc = '';
             scope.resultSize = scope.resultSize || 200;
             
-            console.log(scope.resultSize);
-
             // First stage - show image
             scope.setStage1 = function() {
                 scope.stage = 1;
+                stopStream();
             };
 
             // Second stage - croping image
