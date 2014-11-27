@@ -45,7 +45,11 @@ module.exports = function (grunt) {
         },
         uglify: {
             options: {
-                banner: '<%= meta.banner %>'
+                banner: '<%= meta.banner %>',
+                preserveComments: false, //will strip all comments
+                compress: {
+                    drop_console: true
+                }
             },
             dist: {
 //                src: '<%= concat.dist.dest %>',

@@ -32,7 +32,7 @@ angular.module('avatarEditor', ['ngImgCrop']).directive('avatarEditor', ['$log',
             </div>\
         </div>',
         link: function(scope, element, attrs) {
-            scope.resultSrc = scope.src || '';
+//            scope.resultSrc = scope.src || '';
             scope.croppedSrc = '';
             scope.resultSize = scope.resultSize || 200;
             
