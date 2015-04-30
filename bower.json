@@ -1,6 +1,6 @@
 {
     "name": "avatar-editor",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "keywords": [
         "angular",
         "avatar editor",
@@ -28,6 +28,6 @@
     ],
     "dependencies": {
         "angularjs": "~1.3",
-        "ngImgCrop": "~0.2"
+        "ngImgCrop": "~0.3"
     }
 }
